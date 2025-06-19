@@ -203,7 +203,7 @@ background-color: white;
     margin-bottom: 10px;
 }
 .about .box h3{
-    font-size: 26px;
+    font-size: 27px;
     color: #f80254;
     letter-spacing: 1;
     font-weight: 100;
@@ -211,7 +211,7 @@ background-color: white;
 }
 .about .box p{
     font-weight: bold;
-    font-size: 20px;
+    font-size: 17px;
     line-height: 2;
     margin-bottom: 40px;
 }
@@ -221,8 +221,8 @@ background-color: white;
     width: 40%;
     background-color: #17242d;
     color: white;
-    border-radius: 3px;
-    font-size: 20px;
+    border-radius:7px;
+    font-size: 14px;
 }
 /* Glary */
 .glary{
@@ -244,7 +244,7 @@ background-color: white;
     height: 340px;
     float: left;
     cursor: pointer;
-    border-radius: 12px;
+    border-radius: 10px;
     margin-bottom: 20px;
 }
 .glary .img:hover.img::after{
