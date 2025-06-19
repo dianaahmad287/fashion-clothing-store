@@ -1,0 +1,497 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+      font-family: Cambria
+
+}
+
+.container{
+    width: 70%;
+    margin: auto;
+    
+}
+/* navbar */
+.navbar{
+background-color: white;
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+.imlo{
+    float: left;
+    width: 120px;
+    height: 68px;
+    margin-left: 50px;
+}
+.list{
+    float: right;
+    margin-right: 130px;
+}
+.list li{
+    display: inline-flex;
+    margin-left: 25px;
+    font-size: 25px;
+    margin-top: 6px;
+    position: relative;
+    margin-top: 20px;
+}
+
+.list li a::after{
+    position: absolute;
+    content: '';
+    width: 0%;
+    height: 3px;
+    transition: .5s;
+    background-color: #ff0045;
+    bottom: -8px;
+    left: 3px;
+}
+.list li a{
+    text-decoration: none;
+}
+.list li a:hover::after{
+    width: 100%;
+}
+/* Home */
+.home{
+    text-align: center;
+    width: 100%;
+    background-image: url(../image/two-beautiful-smiling-gorgeous-women-women-standing-stylish-white-green-sweaters-holding-shopping-bags-pink-wall_158538-7556.avif);
+    height: 100vh;
+    padding-top: 220px;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+    position: relative;
+}
+.home .text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 8;
+    width: 60%;
+}
+.home::after{
+    position: absolute;
+    width: 100%;
+    content: '';
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(44, 27, 27, 0.66);
+  
+}
+.home h1{
+   
+    font-size: 40px;
+    color: white;
+     font-weight: bold;
+}
+.home p{
+   
+    font-size: 16px;
+    letter-spacing: 3px;
+    color: white;
+    margin-bottom: 20px;
+}
+.home .btn1{
+    margin: 0 15px;
+    padding: 12px;
+    border: none;
+    border-radius: 2px;
+    background-color: #f8093d;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 20px;
+    transition: .5s;
+}
+.home .btn1:hover{
+    color: black;
+    background-color: white;
+}
+.home .btn2{
+    margin: 0 15px;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    background-color: #ff0c3f;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 20px;
+    transition: .3s;
+}
+.home .btn2:hover{
+    color: black;
+    background-color: white;
+}
+/* About */
+.about{
+    margin-top: 120px;
+}
+.title{
+ text-align: center;
+ font-size: 45px;
+ position: relative;
+ margin-bottom: 60px;
+}
+.title::before{
+    content: '';
+    position: absolute;
+    width: 20%;
+    height: 6px;
+    background-color: #5a6872;
+    bottom: -17px;
+    left: 40%;
+    border-radius: 10px;
+}
+.about{
+    overflow: hidden;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    width: 100%;
+}
+.about .box{
+    padding: 12px;
+    border: 1px solid #17242d;
+    width: 30%;
+    height: 300px;
+    cursor: pointer;
+    float: left;
+    text-align: center;
+    position: relative;
+}
+
+.about .box::after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    background-color:  #cacaca;
+    z-index: -1;
+    transition: .6s;
+    width: 0;
+    height: 0;
+}
+.about .box:hover.box::after{
+    width: 100%;
+    height: 100%;
+}
+.about .box:hover.box h3{
+  color: white;
+}
+.about .box:hover.box i{
+    color: #e70f57;
+  }
+  .about .box:hover.box p{
+    color: #f7105d;
+  }
+  .about .box:hover.box a{
+   
+    color:#cc1351;
+  }
+.about .box i{
+    color: #30424e;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+.about .box h3{
+    font-size: 26px;
+    color: #f80254;
+    letter-spacing: 1;
+    font-weight: 100;
+    margin-bottom: 10px;
+}
+.about .box p{
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 2;
+    margin-bottom: 40px;
+}
+.about .box a{
+    text-decoration: none;
+    padding: 6px 10px;
+    width: 40%;
+    background-color: #17242d;
+    color: white;
+    border-radius: 3px;
+    font-size: 20px;
+}
+/* Glary */
+.glary{
+    width: 100%;
+    background-color: #8080803d;
+    padding: 70px 0;
+}
+.glary{
+    overflow: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    width: 100%;
+}
+.glary .img{
+    position: relative;
+    background-size: cover;
+    width: 30%;
+    background-position: center;
+    height: 340px;
+    float: left;
+    cursor: pointer;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+.glary .img:hover.img::after{
+    height: 100%;
+}
+.glary .img:hover.img .content{
+    visibility: visible;
+}
+.glary .img1{
+    background-image: url(../image/Effortlessly\ blending\ comfort\ and\ style\,\ this\ chic….png);
+}
+.glary .img2{
+    background-image: url(../image/Pinstripe\ Wide\ Leg\ 2-piece\ Suit\ \(PRE-ORDER\)\ –….png);
+}
+.glary .img3{
+    background-image: url(../image/79851397-ba2f-460f-80b3-a498d34ff42a.png);
+}
+
+.glary .img::after{
+    position: absolute;
+    content: '';
+    top: 0;
+    width: 100%;
+    height: 0px;
+    border-radius: 12px;
+    background-color: #ff00556e;
+    transition: .6s;
+}
+.glary .img .content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    z-index: 3;
+    visibility: hidden;
+    transition: .5s;
+}
+.glary .img .content h4{
+    font-size: 36px;
+    letter-spacing: 2;
+    margin-bottom: -10px;
+}
+.glary .img .content p{
+    font-weight: bold;
+    color: #ddd;
+    font-size: 22px;
+}
+.glary .img .content span{
+    margin: 0px 10px;
+}
+.glary .img .content span i{
+    border-radius: 6px;
+    padding: 8px;
+    background-color: #17242d;
+    cursor: pointer;
+    color: #ff0057;
+    font-size: 22px;
+}
+/* Services */
+.services{
+    overflow: auto;
+    margin-top: 60px;
+    margin-bottom:60px;
+    width: 100%;
+}
+.services .box{
+    padding: 12px;
+    border: 1px solid #17242d;
+    width: 30%;
+    height: 250px;
+    float: left;
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+.services .box::after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    background-color: #cacaca;
+    z-index: -1;
+    transition: .6s;
+    width: 0;
+    height: 0;
+}
+.services .box:hover.box::after{
+    width: 100%;
+    height: 100%;
+}
+.services .box:hover.box h3{
+  color: white;
+}
+.services .box:hover.box p{
+    color: #ff0057;
+}
+.services .box:hover.box i{
+  color: white;
+}
+.services .box h3{
+    font-size: 30px;
+    color: #ff0057;
+    font-weight: 300;
+    margin-left: 30px;
+}
+.services .box p{
+    font-weight: bold;
+    margin-left: 30px;
+    line-height: 2;
+    font-size: 18px;
+    letter-spacing: 1.5;
+}
+.services .box i{
+    position: absolute;
+    top: 49px;
+    font-size: 30px;
+    left: 3px;
+    color: #17242d;
+}
+/*pricing  */
+.pricing{
+    margin: 60px 0px;
+}
+.pricing .container{
+    overflow: auto;
+}
+.pricing .container .box{
+    width: 30%;
+    float: left;
+    border: 1px solid black;
+    padding: 16px;
+    text-align: center;
+    position: relative;
+    transition: .3s;
+}
+.pricing .container .box:hover{
+    border-color: #f70052;
+}
+.pricing .container .box:hover::after{
+    height: 100%;
+}
+.pricing .container .box:hover::before{
+    height: 100%;
+}
+.pricing .container .box::before{
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 0%;
+  background-color: #f7005238;
+  transition: 1s;
+
+}
+.pricing .container .box::after{
+    position: absolute;
+    content: '';
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    height: 0%;
+    background-color: #f7005238;
+    transition: 1s;
+
+  }
+.pricing .container .box h2{
+    color: #f70052;
+    font-size: 32px;
+}
+.pricing .container .box .cercale{
+    margin: 30px auto;
+    padding: 10px;
+    border: 1px solid #ff0057;
+    border-radius: 50%;
+    width: 130px;
+    height: 130px;
+}
+
+.pricing .container .box .cercale p{
+    font-weight: bold;
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+.pricing .container .box .cercale span{
+    font-weight: bold;
+    color: #ff0057;
+    font-size: 22px;
+}
+.pricing .container .pricing-content span{
+    display: block;
+    margin: 10px;
+    color: rgba(0, 0, 0, 0.685);
+    letter-spacing: 2px;
+}
+.pricing .container button{
+    padding: 5px 10px;
+    width: 40%;
+    margin: 20px auto 0px;
+    border: 1px solid #ff0057;
+    background-color: white;
+    color: #ff0057;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 3px;
+    cursor: pointer;
+    z-index: 2;
+    position: relative;
+    transition: 1s;
+}
+.pricing .container button:hover{
+    background-color: #f70052;
+    color: white;
+}
+
+/* footer */
+
+.footer{
+    width: 100%;
+    padding: 50px 0;
+    background-color: #17242d;
+}
+.footer .content{
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
+.footer .content img{
+    width: 300px;
+    height: 200px;
+}
+.footer .content .social{
+    margin-top: 15px;
+}
+.footer .content .social i{
+    color: white;
+    margin: 0px 5px;
+    font-size: 33px;
+    cursor: pointer;
+    transition: .3s;
+}
+.footer .content .social i:hover{
+    transform: translateY(-3px);
+}
+.footer .content p{
+    margin-top: 10px;
+    color: white;
+}
